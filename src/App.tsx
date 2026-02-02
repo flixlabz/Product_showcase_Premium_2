@@ -1,19 +1,21 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProductShowcase from './components/ProductShowcase';
-import CircularGallery from './components/CircularGallery';
-import Services from './components/Services';
-import Gallery from './components/Gallery';
-import Events from './components/Events';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
-import TargetCursor from './components/TargetCursor';
-import ProductCatalog from './components/ProductCatalog';
-import ProductDetail from './components/ProductDetail';
 import ParallaxFeature from './components/ParallaxFeature';
+
+// Lazy load heavy components
+const CircularGallery = lazy(() => import('./components/CircularGallery'));
+const Services = lazy(() => import('./components/Services'));
+const Gallery = lazy(() => import('./components/Gallery'));
+const Events = lazy(() => import('./components/Events'));
+const Contact = lazy(() => import('./components/Contact'));
+const TargetCursor = lazy(() => import('./components/TargetCursor'));
+const ProductCatalog = lazy(() => import('./components/ProductCatalog'));
+const ProductDetail = lazy(() => import('./components/ProductDetail'));
 
 // Wrapper to handle scroll preservation on route change
 const ScrollToTop = () => {
@@ -72,24 +74,38 @@ const LandingPage = () => {
   );
 };
 
+// Loading fallback component
+const LoadingFallback = () => (
+  <div className="min-h-screen flex items-center justify-center bg-background">
+    <div className="text-center">
+      <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+      <p className="text-foreground/60 font-medium">Loading...</p>
+    </div>
+  </div>
+);
+
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <div className="bg-background text-foreground selection:bg-primary selection:text-white transition-colors duration-300">
-        <TargetCursor
-          spinDuration={2}
-          hideDefaultCursor
-          parallaxOn
-          hoverDuration={0.2}
-        />
+        <Suspense fallback={null}>
+          <TargetCursor
+            spinDuration={2}
+            hideDefaultCursor
+            parallaxOn={false}
+            hoverDuration={0.2}
+          />
+        </Suspense>
         <Navbar />
         <main>
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/products" element={<ProductCatalog />} />
-            <Route path="/product/:id" element={<ProductDetail />} />
-          </Routes>
+          <Suspense fallback={<LoadingFallback />}>
+            <Routes>
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/products" element={<ProductCatalog />} />
+              <Route path="/product/:id" element={<ProductDetail />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
       </div>

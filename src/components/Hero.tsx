@@ -2,14 +2,14 @@ import { useRef, useMemo } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const Hero = () => {
-    // Generate static random positions for decorative elements
-    const plusPositions = useMemo(() => [...Array(6)].map(() => ({
+    // Generate static random positions for decorative elements (reduced count for performance)
+    const plusPositions = useMemo(() => [...Array(3)].map(() => ({
         x: Math.random() * 100 + "%",
         y: Math.random() * 100 + "%",
         duration: 10 + Math.random() * 10
     })), []);
 
-    const dotPositions = useMemo(() => [...Array(8)].map(() => ({
+    const dotPositions = useMemo(() => [...Array(4)].map(() => ({
         x: Math.random() * 100 + "%",
         y: Math.random() * 100 + "%",
         duration: 5 + Math.random() * 5

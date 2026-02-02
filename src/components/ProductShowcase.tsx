@@ -65,7 +65,7 @@ const ShowcaseItem = ({ product, onInView }: { product: ProductProps; onInView: 
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, margin: "-100px" }}
+                    viewport={{ once: true, margin: "-100px" }}
                     animate={{
                         x: isExpanded ? (reverse ? 100 : -100) : 0,
                         opacity: isExpanded ? 0.3 : 1,
