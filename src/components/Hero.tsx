@@ -46,13 +46,17 @@ const Hero = () => {
     const bgOpacity = useTransform(scrollYProgress, [0.8, 1], [1, 0.6]);
 
     return (
-        <section ref={containerRef} className="relative h-[400vh] bg-primary">
+        <section ref={containerRef} className="relative h-[400vh] bg-gradient-to-br from-slate-400 via-slate-600 to-[#0A0E27]">
             <motion.div
                 style={{ opacity: bgOpacity }}
                 className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center"
             >
+                {/* Metallic Silver Shine Effect */}
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.4)_0,transparent_50%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.3)_0%,transparent_40%,rgba(0,0,0,0.1)_100%)]" />
+
                 {/* Immersive Background Elements */}
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.2)_0,transparent_70%)]" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.15)_0,transparent_70%)]" />
 
                 {/* Floating Laboratory Elements */}
                 <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -117,7 +121,7 @@ const Hero = () => {
                     className="absolute z-10"
                 >
                     <h1 className="text-[15vw] md:text-[12vw] font-[1000] tracking-tighter text-white uppercase leading-none select-none">
-                        FLIX<span className="italic outline-text">LABZ</span>
+                        ADARSH<span className="italic outline-text">WORLD</span>
                     </h1>
                 </motion.div>
 
@@ -129,12 +133,12 @@ const Hero = () => {
                         rotate: canRotate,
                         opacity: canOpacity
                     }}
-                    className="relative z-20 w-[60vh] h-[60vh] flex items-center justify-center pointer-events-none"
+                    className="relative z-20 w-[80vh] h-[60vh] flex items-center justify-center pointer-events-none"
                 >
                     <img
-                        src="/images/red-edition.png"
-                        alt="Energy Drink Can"
-                        className="w-full h-full object-contain drop-shadow-[0_50px_100px_rgba(0,0,0,0.5)]"
+                        src="/images/lathe-technical.png"
+                        alt="Lathe Machine Technical Drawing"
+                        className="w-full h-full object-contain drop-shadow-[0_50px_100px_rgba(0,0,0,0.5)] filter brightness-90 contrast-125"
                     />
 
                     {/* Glowing Aura around the can */}
@@ -151,10 +155,10 @@ const Hero = () => {
                     className="absolute bottom-20 z-30 text-center"
                 >
                     <h2 className="text-5xl md:text-8xl font-black text-white italic tracking-tighter uppercase mb-2">
-                        Ultra <span className="text-black/20">Pure</span>
+                        Precision <span className="text-black/20">Engineering</span>
                     </h2>
                     <div className="h-2 w-32 bg-white mx-auto rounded-full" />
-                    <p className="mt-4 text-white/60 font-black tracking-[0.5em] uppercase text-xs">Gen-2 Formula / Hybrid Core</p>
+                    <p className="mt-4 text-white/60 font-black tracking-[0.5em] uppercase text-xs">Industrial Excellence / Expert Service</p>
                 </motion.div>
 
                 {/* Bottom Hint */}
@@ -166,9 +170,6 @@ const Hero = () => {
                     <div className="w-[1px] h-12 bg-white/30" />
                 </motion.div>
             </motion.div>
-
-            {/* Transition Overlay to the next section */}
-            <div className="absolute bottom-0 left-0 w-full h-64 bg-gradient-to-t from-background to-transparent pointer-events-none" />
         </section>
     );
 };

@@ -15,184 +15,184 @@ export interface Product {
 
 export const products: Product[] = [
     {
-        id: "ultra-pure",
-        title: "ULTRA PURE",
-        subtitle: "GEN-2 FORMULA",
-        image: "/images/red-edition.png",
-        description: "Engineered for maximum cognitive threshold and cellular vitality.",
-        accentColor: "#FF4D4D",
+        id: "lathe-machine",
+        title: "PRECISION LATHE",
+        subtitle: "CNC TECHNOLOGY",
+        image: "/images/lathe-machine.png",
+        description: "High-precision CNC lathe machines for superior metalworking and manufacturing excellence.",
+        accentColor: "#64748B",
         specs: [
-            { label: "Bio-Availability", value: "98.4% Nano-Extracted" },
-            { label: "Recovery Delta", value: "-40% Downtime" },
-            { label: "Concentration", value: "Triple-Shot Essence" },
-            { label: "Purity Grade", value: "Ultra-Premium Volcanic" }
+            { label: "Spindle Speed", value: "4000 RPM Max" },
+            { label: "Accuracy", value: "±0.001mm Tolerance" },
+            { label: "Bed Length", value: "2000mm Capacity" },
+            { label: "Control System", value: "Advanced CNC" }
         ],
-        longDescription: "The Gen-2 Ultra Pure formula is a masterpiece of nutritional engineering. Sourced from pristine volcanic aquifers and refined through ceramic nano-filtration, it delivers immediate cognitive enhancement and cellular hydration. Every drop is balanced with essential trace elements that optimize mitochondrial function.",
-        gallery: ["/images/red-edition.png", "/images/gallery/partner-7.png", "/images/gallery/partner-8.png"],
-        price: "$4.99",
-        category: "Vitality"
+        longDescription: "Our precision lathe machines represent the pinnacle of metalworking technology. Engineered with advanced CNC control systems, these machines deliver unparalleled accuracy and repeatability. Perfect for high-volume production or intricate custom work, they feature hardened steel construction and precision-ground ways for long-lasting performance.",
+        gallery: ["/images/lathe-machine.png", "/images/gallery/partner-7.png", "/images/gallery/partner-8.png"],
+        price: "Contact for Quote",
+        category: "Machinery"
     },
     {
-        id: "nitro-blue",
-        title: "NITRO BLUE",
-        subtitle: "HYBRID CORE",
-        image: "/images/blue-edition.png",
-        description: "Sustained-release kinetic energy with a cold-filtered electrolyte matrix.",
+        id: "milling-machine",
+        title: "VERTICAL MILL",
+        subtitle: "MULTI-AXIS PRECISION",
+        image: "/images/lathe-machine.png",
+        description: "Advanced vertical milling machines with multi-axis capabilities for complex machining operations.",
         accentColor: "#3B82F6",
         reverse: true,
         specs: [
-            { label: "Hydration Index", value: "X-20 Fluid Matrix" },
-            { label: "Neural Latency", value: "-12ms Response" },
-            { label: "pH Level", value: "7.4 Optimized" },
-            { label: "Active Ions", value: "99.9% Purity" }
+            { label: "Axis Travel", value: "X:1000 Y:500 Z:600mm" },
+            { label: "Spindle Power", value: "7.5 kW Motor" },
+            { label: "Tool Capacity", value: "24 Tool ATC" },
+            { label: "Precision", value: "±0.002mm" }
         ],
-        longDescription: "Nitro Blue is designed for the endurance athlete and the night-shift creative. Its unique hybrid core releases electrolytes in phased waves, preventing the 'crash' associated with traditional energy drinks. The cold-filtration process preserves the delicate ionic balance needed for peak neural firing.",
-        gallery: ["/images/blue-edition.png", "/images/gallery/partner-6.png", "/images/gallery/partner-9.jpg"],
-        price: "$4.99",
-        category: "Endurance"
+        longDescription: "Our vertical milling machines combine power with precision. Featuring automatic tool changers and advanced multi-axis capabilities, these mills can handle the most complex machining tasks. The rigid construction and precision ballscrews ensure consistent accuracy across long production runs.",
+        gallery: ["/images/lathe-machine.png", "/images/gallery/partner-6.png", "/images/gallery/partner-9.jpg"],
+        price: "Contact for Quote",
+        category: "Machinery"
     },
     {
-        id: "zenith-gold",
-        title: "ZENITH GOLD",
-        subtitle: "AURUM MATRIX",
-        image: "/images/red-edition.png",
-        description: "A rare infusion of colloidal gold and adaptogenic root extracts.",
+        id: "maintenance-service",
+        title: "PREVENTIVE MAINTENANCE",
+        subtitle: "EXPERT CARE",
+        image: "/images/lathe-machine.png",
+        description: "Comprehensive preventive maintenance programs to keep your industrial machines running at peak performance.",
         accentColor: "#F59E0B",
         specs: [
-            { label: "Gold Purity", value: "24K Colloidal" },
-            { label: "Adaptogen Blend", value: "Custom A-List" },
-            { label: "Mental Clarity", value: "+35% Focus" },
-            { label: "Taste Profile", value: "Saffron & Honey" }
+            { label: "Response Time", value: "24/7 Emergency" },
+            { label: "Coverage", value: "All Major Brands" },
+            { label: "Technicians", value: "Certified Experts" },
+            { label: "Warranty", value: "Extended Protection" }
         ],
-        longDescription: "Zenith Gold is the pinnacle of our luxury line. It combines ancient herbal wisdom with modern bio-hacking. The inclusion of colloidal gold acts as a catalyst for neural transmission, while the adaptogenic blend helps the body maintain homeostasis under extreme stress.",
-        gallery: ["/images/red-edition.png", "/images/gallery/gallery-7.png"],
-        price: "$12.99",
-        category: "Luxury"
+        longDescription: "Our preventive maintenance service ensures your equipment operates at peak efficiency. Our certified technicians perform thorough inspections, lubrication, calibration, and component replacement on schedule. We help you avoid costly downtime and extend the life of your valuable machinery investments.",
+        gallery: ["/images/lathe-machine.png", "/images/gallery/gallery-7.png"],
+        price: "Custom Plans Available",
+        category: "Services"
     },
     {
-        id: "plasma-green",
-        title: "PLASMA GREEN",
-        subtitle: "PHYTO ARC",
-        image: "/images/blue-edition.png",
-        description: "Molecularly distilled chlorophyll and spirulina essence.",
+        id: "repair-service",
+        title: "MACHINE REPAIR",
+        subtitle: "RAPID RESTORATION",
+        image: "/images/lathe-machine.png",
+        description: "Expert repair services for all types of industrial machinery with guaranteed quality workmanship.",
         accentColor: "#10B981",
         specs: [
-            { label: "Phyto Density", value: "850mg/L" },
-            { label: "Oxygenation", value: "Hemo-Boost+" },
-            { label: "Detox Factor", value: "Level 5 Kinetic" },
-            { label: "Source", value: "Arctic Deep-Sea" }
+            { label: "Turnaround", value: "Fast Service" },
+            { label: "Diagnostics", value: "Advanced Testing" },
+            { label: "Parts", value: "OEM Quality" },
+            { label: "Guarantee", value: "90-Day Warranty" }
         ],
-        longDescription: "Plasma Green focuses on oxygenation and detoxification. By utilizing high-pressure CO2 extraction, we've isolated the most potent phytonutrients from deep-sea arctic flora. It's like a fresh breath for your blood stream, increasing oxygen carrying capacity and flushing metabolic waste.",
-        gallery: ["/images/blue-edition.png", "/images/gallery/gallery-8.png"],
-        price: "$5.99",
-        category: "Wellness"
+        longDescription: "When your machines break down, every minute counts. Our expert repair team provides rapid diagnostics and efficient repairs using OEM-quality parts. We service all major brands of lathes, mills, grinders, and other industrial equipment. Our mobile service units can perform many repairs on-site to minimize downtime.",
+        gallery: ["/images/lathe-machine.png", "/images/gallery/gallery-8.png"],
+        price: "Diagnostic Fee: $150",
+        category: "Services"
     },
     {
-        id: "vortex-black",
-        title: "VORTEX BLACK",
-        subtitle: "SHADOW TECH",
-        image: "/images/red-edition.png",
-        description: "Activated carbon matrix with high-dosage caffeine anhydrous.",
+        id: "grinding-machine",
+        title: "SURFACE GRINDER",
+        subtitle: "ULTRA PRECISION",
+        image: "/images/lathe-machine.png",
+        description: "High-precision surface grinding machines for achieving mirror-finish surfaces and tight tolerances.",
         accentColor: "#111827",
         specs: [
-            { label: "Caffeine", value: "280mg Pure" },
-            { label: "Carbon Grade", value: "Medical Activated" },
-            { label: "Metabolism", value: "Thermal Spike" },
-            { label: "Finish", value: "Velvet Obsidian" }
+            { label: "Table Size", value: "600x300mm" },
+            { label: "Grinding Wheel", value: "300mm Diameter" },
+            { label: "Accuracy", value: "±0.0005mm" },
+            { label: "Surface Finish", value: "Ra 0.2μm" }
         ],
-        longDescription: "Vortex Black is not for the faint of heart. It's a high-impact stimulus designed for pre-performance peak. The activated carbon serves as a sponge for toxins, while the massive caffeine dose provides immediate aggressive focus and elevated metabolic rate.",
-        gallery: ["/images/red-edition.png", "/images/gallery/gallery-9.png"],
-        price: "$6.49",
-        category: "Performance"
+        longDescription: "Our surface grinders deliver exceptional precision and surface finish quality. Featuring electromagnetic chucks and precision-ground ways, these machines can achieve tolerances measured in microns. Ideal for tool and die work, gauge making, and any application requiring superior flatness and finish.",
+        gallery: ["/images/lathe-machine.png", "/images/gallery/gallery-9.png"],
+        price: "Contact for Quote",
+        category: "Machinery"
     },
     {
-        id: "nebula-violet",
-        title: "NEBULA VIOLET",
-        subtitle: "LUCID DREAM",
-        image: "/images/blue-edition.png",
-        description: "Nootropic blend for enhanced dreaming and creative visualization.",
+        id: "installation-service",
+        title: "MACHINE INSTALLATION",
+        subtitle: "PROFESSIONAL SETUP",
+        image: "/images/lathe-machine.png",
+        description: "Professional installation and commissioning services ensuring optimal machine performance from day one.",
         accentColor: "#8B5CF6",
         specs: [
-            { label: "Nootropics", value: "Cognizin Alpha" },
-            { label: "Dream Recall", value: "Level Alpha" },
-            { label: "Serotonin", value: "Natural Precursor" },
-            { label: "Extracted", value: "Moonlight Bloom" }
+            { label: "Site Preparation", value: "Full Assessment" },
+            { label: "Leveling", value: "Precision Alignment" },
+            { label: "Training", value: "Operator Certification" },
+            { label: "Documentation", value: "Complete Records" }
         ],
-        longDescription: "Nebula Violet bridges the gap between waking life and the subconscious. Formulated with rare nocturnal plant extracts, it supports the REM cycle and enhances lucid dreaming. Ideal for creatives and thinkers who solve problems in their sleep.",
-        gallery: ["/images/blue-edition.png", "/images/gallery/gallery-10.png"],
-        price: "$7.99",
-        category: "Rest/Creative"
+        longDescription: "Proper installation is critical for machine performance and longevity. Our installation team handles everything from site preparation and foundation work to precision leveling and alignment. We provide comprehensive operator training and complete documentation to ensure your team can maximize productivity from day one.",
+        gallery: ["/images/lathe-machine.png", "/images/gallery/gallery-10.png"],
+        price: "Starting at $2,500",
+        category: "Services"
     },
     {
-        id: "titan-slate",
-        title: "TITAN SLATE",
-        subtitle: "IRON CORE",
-        image: "/images/red-edition.png",
-        description: "Heavy mineral complex for bone density and muscle skeletal support.",
+        id: "calibration-service",
+        title: "PRECISION CALIBRATION",
+        subtitle: "ISO CERTIFIED",
+        image: "/images/lathe-machine.png",
+        description: "ISO-certified calibration services to ensure your machines meet the highest accuracy standards.",
         accentColor: "#64748B",
         specs: [
-            { label: "Calcium", value: "Structural Grade" },
-            { label: "Magnesium", value: "Deep Matrix" },
-            { label: "Density", value: "Core Rebuild" },
-            { label: "Flavor", value: "Mineral Slate" }
+            { label: "Standards", value: "ISO 9001 Certified" },
+            { label: "Equipment", value: "Laser Interferometer" },
+            { label: "Reporting", value: "Full Documentation" },
+            { label: "Frequency", value: "Annual/Semi-Annual" }
         ],
-        longDescription: "Titan Slate is the foundation of physical strength. It provides the essential building blocks for bone health and muscle contraction. Unlike synthetic supplements, our minerals are bound to organic fulvic acids, ensuring they reach your skeletal system directly.",
-        gallery: ["/images/red-edition.png", "/images/gallery/br-1.png"],
-        price: "$5.49",
-        category: "Strength"
+        longDescription: "Maintain your competitive edge with our ISO-certified calibration services. Using state-of-the-art laser interferometers and precision measuring equipment, we verify and adjust your machines to factory specifications. Complete documentation ensures compliance with quality management systems and customer requirements.",
+        gallery: ["/images/lathe-machine.png", "/images/gallery/br-1.png"],
+        price: "Starting at $800",
+        category: "Services"
     },
     {
-        id: "sonic-white",
-        title: "SONIC WHITE",
-        subtitle: "ECHO PULSE",
-        image: "/images/blue-edition.png",
-        description: "High-frequency auditory focus blend with natural electrolytes.",
+        id: "cnc-retrofit",
+        title: "CNC RETROFIT",
+        subtitle: "MODERNIZATION",
+        image: "/images/lathe-machine.png",
+        description: "Transform your conventional machines into modern CNC equipment with our retrofit solutions.",
         accentColor: "#F8FAFC",
         specs: [
-            { label: "Auditory", value: "+15% Sensitivity" },
-            { label: "Reaction", value: "Sonic Trigger" },
-            { label: "Electrolytes", value: "Cloud-Mist" },
-            { label: "Essence", value: "Glacier Ice" }
+            { label: "Control Systems", value: "Latest Technology" },
+            { label: "Servo Motors", value: "High Performance" },
+            { label: "Software", value: "CAD/CAM Integration" },
+            { label: "ROI", value: "Rapid Payback" }
         ],
-        longDescription: "Sonic White is tuned for reaction time. Whether you're a professional gamer or a precision musician, this formula sharpens auditory processing and visual reaction. The cloud-mist electrolytes offer the lightest, most refreshing finish in our catalog.",
-        gallery: ["/images/blue-edition.png", "/images/gallery/br-2.png"],
-        price: "$5.99",
-        category: "Reaction"
+        longDescription: "Extend the life of your existing machines with our CNC retrofit service. We replace outdated controls with modern CNC systems, install precision servo motors, and integrate the latest software. This cost-effective solution provides the benefits of new CNC equipment at a fraction of the cost.",
+        gallery: ["/images/lathe-machine.png", "/images/gallery/br-2.png"],
+        price: "Contact for Quote",
+        category: "Services"
     },
     {
-        id: "lava-amber",
-        title: "LAVA AMBER",
-        subtitle: "THERMO FLUX",
-        image: "/images/red-edition.png",
-        description: "Thermogenic fat-burning matrix with capsicum extract.",
+        id: "drilling-machine",
+        title: "RADIAL DRILL",
+        subtitle: "HEAVY DUTY",
+        image: "/images/lathe-machine.png",
+        description: "Robust radial drilling machines for large workpieces and heavy-duty manufacturing applications.",
         accentColor: "#F59E0B",
         specs: [
-            { label: "Thermogenic", value: "Capsi-Heat+" },
-            { label: "Fat Oxidation", value: "+22% Rate" },
-            { label: "Energy", value: "Lipid-Base" },
-            { label: "Heat Level", value: "Phase 3" }
+            { label: "Drilling Capacity", value: "50mm Max" },
+            { label: "Arm Length", value: "1500mm Reach" },
+            { label: "Column Diameter", value: "300mm" },
+            { label: "Motor Power", value: "4 kW" }
         ],
-        longDescription: "Lava Amber ignites your internal furnace. By utilizing a proprietary encapsulation of red pepper extracts, it increases core temperature and speeds up fat oxidation without causing gastric distress. Perfect for those targeting lean physique and high heat performance.",
-        gallery: ["/images/red-edition.png", "/images/gallery/br-3.png"],
-        price: "$6.99",
-        category: "Weight Mgmt"
+        longDescription: "Our radial drilling machines are built for heavy-duty applications. The robust construction and long arm reach make them ideal for drilling large castings, structural steel, and other oversized workpieces. Multiple spindle speeds and feeds provide versatility for various materials and hole sizes.",
+        gallery: ["/images/lathe-machine.png", "/images/gallery/br-3.png"],
+        price: "Contact for Quote",
+        category: "Machinery"
     },
     {
-        id: "aqua-neon",
-        title: "AQUA NEON",
-        subtitle: "CYBER HYDRATE",
-        image: "/images/blue-edition.png",
-        description: "UV-reactive electrolyte blend with synthetic-free neon glow.",
+        id: "training-service",
+        title: "OPERATOR TRAINING",
+        subtitle: "SKILL DEVELOPMENT",
+        image: "/images/lathe-machine.png",
+        description: "Comprehensive training programs to maximize operator skills and machine productivity.",
         accentColor: "#06B6D4",
         specs: [
-            { label: "Luminescence", value: "Natural UV-R" },
-            { label: "Hydration", value: "Cyber-Fluid 2.0" },
-            { label: "Vitamins", value: "B-Complex Ultra" },
-            { label: "Style", value: "Neon Aesthetic" }
+            { label: "Duration", value: "1-5 Day Programs" },
+            { label: "Certification", value: "Industry Recognized" },
+            { label: "Format", value: "Hands-On Practice" },
+            { label: "Materials", value: "Complete Manuals" }
         ],
-        longDescription: "Aqua Neon is the future of social drinking. It's the world's first all-natural beverage that glows under blacklight, thanks to concentrated riboflavin and quinine extracts. Beyond the look, it's packed with a potent B-complex to keep your energy levels steady throughout the night.",
-        gallery: ["/images/blue-edition.png", "/images/gallery/br-4.png"],
-        price: "$8.99",
-        category: "Social/Night"
+        longDescription: "Invest in your team with our professional training programs. Our experienced instructors provide hands-on training covering machine operation, programming, maintenance, and safety. Courses are tailored to your specific equipment and skill levels. Participants receive certification and comprehensive reference materials.",
+        gallery: ["/images/lathe-machine.png", "/images/gallery/br-4.png"],
+        price: "$500 per person",
+        category: "Services"
     }
 ];

@@ -14,14 +14,105 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 4px;
-    height: 4px;
+    width: 6px;
+    height: 6px;
     background: #fff;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     will-change: transform;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
+/* Circular Mechanical Gear Cursor */
+.target-cursor-gear {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 32px;
+    height: 32px;
+    transform: translate(-50%, -50%);
+    will-change: transform;
+}
+
+/* Outer gear ring with notches */
+.gear-outer {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Inner circle */
+.gear-inner {
+    position: absolute;
+    inset: 8px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+/* Small notches on the outer circle for gear effect */
+.gear-notch {
+    position: absolute;
+    left: 50%;
+    top: -1px;
+    width: 2px;
+    height: 4px;
+    background: #fff;
+    transform-origin: 50% 17px;
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+}
+
+.gear-notch:nth-child(1) {
+    transform: translateX(-50%) rotate(0deg);
+}
+
+.gear-notch:nth-child(2) {
+    transform: translateX(-50%) rotate(30deg);
+}
+
+.gear-notch:nth-child(3) {
+    transform: translateX(-50%) rotate(60deg);
+}
+
+.gear-notch:nth-child(4) {
+    transform: translateX(-50%) rotate(90deg);
+}
+
+.gear-notch:nth-child(5) {
+    transform: translateX(-50%) rotate(120deg);
+}
+
+.gear-notch:nth-child(6) {
+    transform: translateX(-50%) rotate(150deg);
+}
+
+.gear-notch:nth-child(7) {
+    transform: translateX(-50%) rotate(180deg);
+}
+
+.gear-notch:nth-child(8) {
+    transform: translateX(-50%) rotate(210deg);
+}
+
+.gear-notch:nth-child(9) {
+    transform: translateX(-50%) rotate(240deg);
+}
+
+.gear-notch:nth-child(10) {
+    transform: translateX(-50%) rotate(270deg);
+}
+
+.gear-notch:nth-child(11) {
+    transform: translateX(-50%) rotate(300deg);
+}
+
+.gear-notch:nth-child(12) {
+    transform: translateX(-50%) rotate(330deg);
+}
+
+/* Corner brackets for hover state */
 .target-cursor-corner {
     position: absolute;
     left: 50%;

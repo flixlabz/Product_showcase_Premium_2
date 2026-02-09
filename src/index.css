@@ -44,7 +44,7 @@ body {
   color: var(--foreground);
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1), color 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   /* Performance optimizations */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -117,4 +117,56 @@ h6 {
 .outline-text {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
   color: transparent !important;
+}
+
+/* Blueprint Background Pattern */
+.blueprint-bg {
+  background-color: #1a2332;
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size:
+    100px 100px,
+    100px 100px,
+    20px 20px,
+    20px 20px;
+  background-position:
+    -1px -1px,
+    -1px -1px,
+    -1px -1px,
+    -1px -1px;
+  position: relative;
+}
+
+.blueprint-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Technical Drawing Lines */
+.blueprint-lines {
+  position: relative;
+}
+
+.blueprint-lines::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    repeating-linear-gradient(0deg,
+      transparent,
+      transparent 2px,
+      rgba(59, 130, 246, 0.03) 2px,
+      rgba(59, 130, 246, 0.03) 4px);
+  pointer-events: none;
 }

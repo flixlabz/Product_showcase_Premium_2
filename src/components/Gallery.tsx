@@ -17,8 +17,8 @@ const items = [
 
 const Gallery = () => {
     return (
-        <section id="gallery" className="py-24 bg-foreground/5">
-            <div className="max-w-7xl mx-auto px-6">
+        <section id="gallery" className="py-24 blueprint-bg">
+            <div className="max-w-7xl mx-auto px-6 relative z-10">
                 <div className="flex justify-between items-end mb-16 px-2">
                     <div>
                         <span className="text-primary font-bold tracking-widest uppercase text-xs">The Vision</span>

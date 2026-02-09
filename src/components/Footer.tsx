@@ -5,10 +5,10 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
                     <div className="col-span-1 md:col-span-1">
                         <a href="#" className="text-3xl font-black tracking-tighter text-primary block mb-6">
-                            FLIXLABZ<span className="text-foreground">.</span>
+                            ADARSH WORLD<span className="text-foreground">.</span>
                         </a>
                         <p className="text-foreground/40 text-sm leading-relaxed mb-8">
-                            Pushing the boundaries of human performance through science-backed nutrition and advanced bio-hacking.
+                            Precision engineering and expert maintenance services for industrial machinery. Your trusted partner in manufacturing excellence.
                         </p>
                     </div>
 
@@ -34,7 +34,7 @@ const Footer = () => {
 
                     <div>
                         <h4 className="text-foreground font-black text-sm uppercase tracking-widest mb-6">Newsletter</h4>
-                        <p className="text-foreground/40 text-xs mb-4">Stay ahead of the curve. Join our elite list.</p>
+                        <p className="text-foreground/40 text-xs mb-4">Get industry updates and maintenance tips.</p>
                         <div className="flex gap-2">
                             <input
                                 type="email"
@@ -50,7 +50,7 @@ const Footer = () => {
 
                 <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
                     <p className="text-foreground/20 text-xs font-medium">
-                        © 2026 FLIXLABZ INDUSTRIES. ALL RIGHTS RESERVED.
+                        © 2026 ADARSH WORLD. ALL RIGHTS RESERVED.
                     </p>
                     <div className="flex gap-8">
                         <a href="#" className="text-foreground/20 hover:text-foreground transition-colors text-xs uppercase tracking-widest font-bold">Terms</a>

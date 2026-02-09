@@ -59,12 +59,12 @@ const Navbar = () => {
                 >
                     <img
                         src="/images/logo.png"
-                        alt="FLixLabZ Logo"
+                        alt="Adarsh World Logo"
                         className="h-8 w-auto dark:invert dark:brightness-100 dark:contrast-100 transition-all group-hover:scale-110"
                         style={{ filter: theme === 'dark' ? 'invert(1) brightness(2)' : 'none' }}
                     />
                     <span className="text-2xl font-black tracking-tighter text-foreground">
-                        FLixLabZ<span className="text-primary">.</span>
+                        ADARSH WORLD<span className="text-primary">.</span>
                     </span>
                 </Link>
 
@@ -110,7 +110,7 @@ const Navbar = () => {
                         whileTap={{ scale: 0.95 }}
                         className="px-6 py-2 bg-primary text-white font-bold rounded-full text-sm hover:shadow-[0_0_20px_rgba(255,107,53,0.4)] transition-all"
                     >
-                        Get Started
+                        Request Quote
                     </motion.button>
                 </div>
 
@@ -163,7 +163,7 @@ const Navbar = () => {
                                 )
                             ))}
                             <button className="w-full py-3 bg-primary text-white font-bold rounded-xl mt-2">
-                                Get Started
+                                Request Quote
                             </button>
                         </div>
                     </motion.div>

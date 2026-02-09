@@ -6,23 +6,23 @@ import ScrollStack, { ScrollStackItem } from './ScrollStack';
 const events = [
     {
         date: "MAR 15, 2026",
-        title: "The Genesis Launch",
-        location: "Neo Tokyo, JPN",
-        attendees: "2,500+",
+        title: "Industrial Automation Expo",
+        location: "Chicago, USA",
+        attendees: "3,500+",
         image: "from-blue-600/20 to-purple-600/20",
     },
     {
         date: "APR 22, 2026",
-        title: "Global Bio-Summit",
-        location: "Berlin, DEU",
-        attendees: "1,200+",
+        title: "CNC Technology Workshop",
+        location: "Detroit, USA",
+        attendees: "850+",
         image: "from-orange-600/20 to-red-600/20",
     },
     {
         date: "MAY 30, 2026",
-        title: "Future of Performance",
-        location: "Virtual Reality",
-        attendees: "10,000+",
+        title: "Precision Engineering Summit",
+        location: "Houston, USA",
+        attendees: "2,200+",
         image: "from-emerald-600/20 to-blue-600/20",
     }
 ];
@@ -34,14 +34,14 @@ const Events = () => {
         offset: ["start end", "end start"]
     });
 
-    // MOMENTS text transform: Starts big and fully opaque in front, then recedes and fades
+    // EXCELLENCE text transform: Starts big and fully opaque in front, then recedes and fades
     const textScale = useTransform(scrollYProgress, [0, 0.4, 0.8], [2.5, 1, 0.6]);
     const textOpacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 0.9], [1, 0.8, 0.1, 0]);
     const textZ = useTransform(scrollYProgress, [0, 0.5], [20, 0]);
 
     return (
-        <section id="events" ref={containerRef} className="py-32 relative min-h-[200vh] bg-background">
-            {/* Immersive Background MOMENTS Text */}
+        <section id="events" ref={containerRef} className="py-32 relative min-h-[200vh] blueprint-bg">
+            {/* Immersive Background EXCELLENCE Text */}
             <motion.div
                 style={{
                     scale: textScale,
@@ -51,7 +51,7 @@ const Events = () => {
                 className="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden"
             >
                 <span className="text-[30vw] font-black text-primary tracking-tighter leading-none">
-                    MOMENTS
+                    EXCELLENCE
                 </span>
             </motion.div>
 
@@ -62,14 +62,14 @@ const Events = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         className="text-primary font-bold tracking-[0.3em] uppercase text-sm block mb-4"
                     >
-                        The Experience
+                        Industry Events
                     </motion.span>
                     <motion.h2
                         initial={{ opacity: 0, scale: 0.9 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         className="text-5xl md:text-8xl font-black tracking-tighter text-foreground uppercase"
                     >
-                        Upcoming <span className="text-primary italic">Events</span>
+                        Upcoming <span className="text-primary italic">Shows</span>
                     </motion.h2>
                 </div>
 
@@ -120,7 +120,7 @@ const Events = () => {
                                     whileTap={{ scale: 0.95 }}
                                     className="px-12 py-6 bg-primary text-white font-black rounded-[2rem] text-sm shrink-0 mt-8 md:mt-0 tracking-[0.2em] uppercase transition-all shadow-[0_15px_30px_rgba(255,107,53,0.3)] hover:shadow-primary/50"
                                 >
-                                    SECURE SPOT
+                                    REGISTER NOW
                                 </motion.button>
                             </motion.div>
                         </ScrollStackItem>

@@ -326,6 +326,26 @@ const TargetCursor = ({
     return (
         <div ref={cursorRef} className="target-cursor-wrapper">
             <div ref={dotRef} className="target-cursor-dot" />
+            <div className="target-cursor-gear">
+                {/* Outer gear ring */}
+                <div className="gear-outer" />
+                {/* Inner circle */}
+                <div className="gear-inner" />
+                {/* Small notches around the edge - 12 notches */}
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+                <div className="gear-notch" />
+            </div>
+            {/* Corner brackets for hover state */}
             <div className="target-cursor-corner corner-tl" />
             <div className="target-cursor-corner corner-tr" />
             <div className="target-cursor-corner corner-br" />
